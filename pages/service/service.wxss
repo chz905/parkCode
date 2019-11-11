@@ -1,0 +1,41 @@
+/* pages/service/service.wxss */
+page{
+  background: #52524a;
+}
+.service_box .ser_item{
+margin-top: 20rpx;
+padding: 0px 20rpx;
+box-sizing: border-box;
+}
+.ser_title{
+  background: #fece22;
+  border-radius: 20rpx 20rpx 0rpx 0rpx;
+  height: 116rpx;
+  color: #1a110a;
+  line-height: 116rpx;
+  padding: 0px 20rpx;
+  box-sizing: border-box;
+}
+.ser_cont{
+  border-top: 1rpx solid #fff;
+  background: #fece22;
+  border-radius: 0rpx 0rpx 20rpx 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: #666;
+  line-height: 50rpx;
+  animation:myfirst 0.5s;
+}
+.block{
+  display: block;
+  
+}
+.none{
+  display: none;
+}
+
+@keyframes myfirst
+{
+from {opacity:0;}
+to {opacity:1;}
+}

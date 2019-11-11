@@ -1,0 +1,125 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<block wx:if="{{myMap}}">
+
+<view  class="" hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
+  <map id="myMap" style="width: 100%; height: 100%;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" show-location covers="{{covers}}"></map>
+</view>
+
+<cover-view class='yuandian' bindtap="moveToLocation">
+  <cover-image class="y_img" src='/images/yuandian.png'></cover-image>
+</cover-view>
+<cover-view class="index_top">
+  <cover-view class="ds_item">
+    <cover-image class="ds_img" src="/images/pic1.png" mode="aspectFit"></cover-image>
+    <cover-view class="ds_title">隐私保护</cover-view>
+    <cover-view class="ds_ds">私密信息无泄漏</cover-view>
+  </cover-view>
+  <cover-view class="ds_item">
+    <cover-image class="ds_img" src="/images/pic2.png" mode="aspectFit"></cover-image>
+    <cover-view class="ds_title">快速便捷</cover-view>
+    <cover-view class="ds_ds">扫码通知挪车</cover-view>
+  </cover-view>
+  <cover-view class="ds_item">
+    <cover-image class="ds_img" src="/images/pic3.png" mode="aspectFit"></cover-image>
+    <cover-view class="ds_title">多管齐下</cover-view>
+    <cover-view class="ds_ds">短信电话多渠道</cover-view>
+  </cover-view>
+</cover-view>
+<cover-view class="line_box">
+  <cover-view class="top_line">
+    <cover-view class="line_span"></cover-view>
+  </cover-view>
+  <cover-view class="top_line">
+    <cover-view class="line_span"></cover-view>
+  </cover-view>
+</cover-view>
+<!-- 申请代理 -->
+<cover-view class="sqdl" bindtap='sqdl_click'>
+  申请代理
+</cover-view>
+
+<!-- 底部 -->
+<cover-view class="index_foot">
+  <cover-image class="foot_bj" src="/images/bj.png"></cover-image>
+  <cover-view class="foot_main">
+    <cover-image class="foot_img" src="/images/pic4.png"></cover-image>
+  </cover-view>
+  <cover-view class="sq_ncewm">
+    申请挪车二维码
+  </cover-view>
+</cover-view>
+</block>
+
+
+<!-- 表单 -->
+<!-- <block wx:if="{{index_form}}">
+    <form>
+      <view class='index_form'>
+      <image src='/images/1.jpg' mode='aspectFill' class='bj2' ></image>
+        <view class='masking' bindtap='exit'>
+        </view>
+        <view class='form_box'>
+          <view class='form_title'>申请代理</view>
+          <view class='form_list'>
+            <view class='form_item'>
+                <i class="iconfont iconxingming"></i>
+                <input placeholder='请输入姓名'></input>
+            </view>
+             <view class='form_item'>
+                <i class="iconfont iconicon-"></i>
+                <input placeholder='请输入手机号'></input>
+            </view>
+          </view>
+          <button class='apply'>提交申请</button>
+        </view>
+        <view class='exit' bindtap='exit'>
+          <i class="iconfont iconguanbi"></i>
+        </view>
+    
+      </view>
+     </form>
+</block> -->
+
+<block wx:if="{{index_form}}">
+    <form>
+      <view class='index_form'>
+      <image src='/images/1.jpg' mode='aspectFill' class='bj2' ></image>
+        <view class='masking' bindtap='exit'>
+        </view>
+        <view class='form_box'>
+          <view class='form_title'>提交联系信息</view>
+          <view class='form_list'>
+            <view class='form_item'>
+                <i class="iconfont iconxingming"></i>
+                <input placeholder='请输入姓名'></input>
+            </view>
+             <view class='form_item'>
+                <i class="iconfont iconicon-"></i>
+                <input placeholder='请输入手机号'></input>
+            </view>
+              <view class='form_item'>
+                <i class="iconfont iconicon-"></i>
+                <input placeholder='请输入详情地址'></input>
+            </view>
+          </view>
+          <button class='apply'>提交申请</button>
+        </view>
+        <view class='exit' bindtap='exit'>
+          <i class="iconfont iconguanbi"></i>
+        </view>
+    
+      </view>
+     </form>
+</block>

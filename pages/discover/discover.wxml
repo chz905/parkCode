@@ -1,0 +1,122 @@
+<view class="dis_thead">
+    <view class="t_location">
+        南昌<i class="iconfont iconjiantou"></i>
+    </view>
+    <view class="t_right">
+        <i class="iconfont iconxinxi"></i>
+    </view>
+</view>
+<view class="dis_title">你好，车主</view>
+
+
+<!-- 违章年检 -->
+<view class="dis_typelist">
+    <view class="dis_titem" bindtap='dis_click'>
+        <view class="dt_important">违
+            <i class="iconfont icongantanhao"></i>
+        </view>
+        <text>违章处理</text>
+    </view>
+    <view class="dis_titem" bindtap='dis_click'>
+        <view class="dt_important">检<i class="iconfont icongantanhao"></i></view>
+        <text>车辆年检</text>
+    </view>
+    <view class="dis_titem" bindtap='dis_click'>
+        <view class="dt_important">保<i class="iconfont icongantanhao"></i></view>
+        <text>保险报价</text>
+    </view>
+</view>
+
+
+<view class="dis_typelist">
+    <view class="dis_twoleft">
+        <i class="iconfont iconchezhu"></i>
+        <view class="two_number">
+            {{num1}}
+        </view>
+        <view class="two_title">附近车主</view>
+    </view>
+    <view class="line_tow"></view>
+    <view class="dis_tworight">
+        <i class="iconfont iconqiche"></i>
+        <view class="two_number">
+            0
+        </view>
+        <view class="two_title">爱车估值</view>
+    </view>
+</view>
+<view class="car_list">
+    <swiper autoplay="true" interval="1000" duration="1000" vertical="true" circular="true">
+        <block wx:for="{{number_list}}">
+            <swiper-item>
+                <text>{{item.user}}</text>车主已加入
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="dis_typelist">
+    <view class="dis_twoleft">
+        <view class="sign_box">
+            查
+        </view>
+        <view class="foot_title1">
+            驾照查分
+        </view>
+        <view class="foot_title2">查一查掌控清分周期</view>
+        <view class="foot_title2">977人用过</view>
+    </view>
+    <view class="line_tow"></view>
+    <view class="dis_tworight">
+        <view class="sign_box">
+            挪
+        </view>
+        <view class="clear"></view>
+        <view class="foot_title1">
+            爱车估值
+        </view>
+        <view class="foot_title2">匿名通知保护隐私</view>
+        <view class="foot_title2">1357人用过</view>
+    </view>
+</view>
+
+
+
+
+<view class='addcar_page' wx:if="{{addcar_page}}">
+
+  <image class='car_img' src='/images/car.png' mode='widthFix'></image>
+
+  <view class='addcar_cont'>
+     <navigator class='add' url='../photograph/photograph' >
+     <i class="iconfont iconjia"></i>
+     </navigator>
+     <view class='add_title'>
+      添加爱车，更懂它
+     </view>
+     <view class='add_carlist'>
+     <view class='add_item'>
+      违章提醒
+     </view>
+     <view class='add_item'>
+      保险提醒
+     </view>
+     <view class='add_item'>
+      审车提醒
+     </view>
+     <view class='add_item'>
+      爱车评估
+     </view>
+     <view class='add_item'>
+      加油省钱
+     </view>
+     <view class='add_item'>
+      特惠洗车
+     </view >
+     <view class='add_item'>....</view>
+     <view class='exit' bindtap='exit'>
+      <i class="iconfont iconguanbi1"></i>
+     </view>
+     </view>
+  </view>
+
+</view>

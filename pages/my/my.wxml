@@ -1,0 +1,78 @@
+<!--pages/my/my.wxml-->
+<view class='my_head'>
+    <view class='img'>
+        <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='user_name'>
+        <open-data type="userNickName"></open-data>
+    </view>
+    <view class="water">
+        <view class="water-c">
+            <view class="water-1"> </view>
+            <view class="water-2"> </view>
+        </view>
+    </view>
+</view>
+<view class="tz_list">
+    <view class="tz_item">
+        <text class="number">3</text>
+        <text>通知次数</text>
+    </view>
+    <view class="tz_item">
+        <text class="number">6</text>
+        <text>账号积分</text>
+    </view>
+</view>
+
+<view class='my_navlist'>
+  <view class='my_item'>
+    <image src='/images/my_nav1.png' mode='widthFix'></image>
+    <view class='my_navtitle'>免打扰</view>
+   <switch bindchange="switch2Change"/>
+  </view>
+  <view class='my_item'>
+    <image src='/images/my_nav2.png' mode='widthFix'></image>
+    <view class='my_navtitle'>挪车码</view>
+    <view class='my_right'>
+      立即申购
+    </view>
+  </view>
+  <view class='my_item' bindtap='go_Location' data-url='../index/index'>
+    <image src='/images/my_nav3.png' mode='widthFix'></image>
+    <view class='my_navtitle'>申购记录</view>
+    <i class='iconfont iconfangxiangjiantou1'></i>
+  </view>
+  <view class='line'></view>
+  <view class='my_item' bindtap='go_Location' data-url='../index/index'>
+    <image src='/images/my_nav4.png' mode='widthFix'></image>
+    <view class='my_navtitle'>我的收益</view>
+    <i class='iconfont iconfangxiangjiantou1'></i>
+  </view>
+   <view class='my_item' bindtap='go_Location'  data-url='../index/index'>
+    <image src='/images/my_nav5.png' mode='widthFix'></image>
+    <view class='my_navtitle'>推荐有奖</view>
+    <i class='iconfont iconfangxiangjiantou1'></i>
+  </view>
+  <view class='line'></view>
+    <view class='my_item' bindtap='go_Location'  data-url='../index/index'>
+    <image src='/images/my_nav6.png' mode='widthFix'></image>
+    <view class='my_navtitle'>挪车记录</view>
+    <i class='iconfont iconfangxiangjiantou1'></i>
+  </view>
+   <view class='my_item' bindtap='go_Location'  data-url='../index/index'>
+    <image src='/images/my_nav7.png' mode='widthFix'></image>
+    <view class='my_navtitle'>出行伴侣</view>
+    <i class='iconfont iconfangxiangjiantou1'></i>
+  </view>
+<view class='my_item' bindtap='go_Location' data-url='../index/index'>
+    <image src='/images/my_nav8.png' mode='widthFix'></image>
+    <view class='my_navtitle'>使用手册</view>
+    <i class='iconfont iconfangxiangjiantou1'></i>
+  </view>
+</view>
+<view class='jszc'>某某公司 提供技术支持</view>
+
+<button class='kf'>
+<image src='/images/kefu.png'></image>
+</button>
+

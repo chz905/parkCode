@@ -1,0 +1,17 @@
+<!--pages/aqy/aqy.wxml-->
+<view>
+  <block wx:for="{{memberList}}" wx:key="index">
+    <view class='cont' bindtap='clickitem' data-index="{{index}}">
+      <text>{{item.cont}}</text>
+    </view>
+
+    <view class="{{clickId == index ? 'block':'none'}}">
+      <block wx:for="{{item.invalidActivty}}" wx:key="index">
+        <view class="price" bindtap="clickSubItem" data-text="{{item.price}}">
+          <text>{{item.price}}</text>
+        </view>
+      </block>
+    </view>
+    
+  </block>
+</view>

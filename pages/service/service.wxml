@@ -1,0 +1,12 @@
+<!--pages/service/service.wxml-->
+
+<view class='service_box'>
+<block wx:for="{{service}}">
+  <view class='ser_item'>
+    <view class='ser_title' style="color:{{clickId == index?'#802aa3':''}}" bindtap='clickitem' data-index="{{index}}"> {{item.title}}</view>
+    <view class="ser_cont {{clickId == index ? 'block':'none'}}">
+      {{item.cont}}
+    </view>
+  </view>
+</block>
+</view>

@@ -1,0 +1,260 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} */
+
+page {
+    height: 100%;
+}
+
+.yuandian {
+    position: fixed;
+    bottom: 260rpx;
+    left: 40rpx;
+    border-radius: 50%;
+    width: 90rpx;
+    height: 90rpx;
+    z-index: 2;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.3)
+}
+
+.yuandian .y_img {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+.index_top {
+    position: fixed;
+    top: 40rpx;
+    left: 25rpx;
+    width: 700rpx;
+    border-radius: 10rpx;
+    background: #fff;
+    display: flex;
+    box-shadow: 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.3);
+   z-index:2;
+
+}
+
+.index_top .ds_item {
+    display: flex;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.index_top .ds_img {
+    width: 100rpx;
+    height: 100rpx;
+    margin: 20rpx 0px;
+}
+
+.index_top .ds_title {
+    color: #1d9eec;
+    font-size: 32rpx;
+
+}
+
+.index_top .ds_ds {
+    font-size: 24rpx;
+    color: #666;
+    line-height: 50rpx;
+}
+
+.line_box {
+    position: fixed;
+    top: 0rpx;
+    left: 0px;
+    width: 100%;
+    height: 60rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 130rpx;
+    box-sizing: border-box;
+    z-index:2;
+
+
+}
+
+.line_box .top_line {
+    height: 60rpx;
+    width: 20rpx;
+    background: #fdcd21;
+    border-radius: 0px 0rpx 20rpx 20rpx;
+    position: relative;
+}
+
+.line_box .top_line .line_span {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 2rpx 2rpx 2rpx rgba(0, 0, 0, 0.3);
+
+}
+
+.sqdl {
+    position: fixed;
+    right: 0px;
+    top: 300rpx;
+    border-radius: 80rpx 0px 0px 80rpx;
+    height: 80rpx;
+    color: #fddf7d;
+    background: #646462;
+    width: 190rpx;
+    text-align: center;
+    line-height: 80rpx;
+    z-index:2;
+
+}
+
+/*底部*/
+.index_foot {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 281rpx;
+    z-index: 2;
+}
+
+.index_foot .foot_bj {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.index_foot .foot_main {
+    position: relative;
+    width: 148rpx;
+    height: 148rpx;
+    border-radius: 50%;
+    margin: 0px auto;
+    z-index: 4;
+    margin-top: 20rpx;
+
+}
+
+.index_foot .foot_main .foot_img {
+    width: 100%;
+    height: 100%;
+}
+
+.sq_ncewm {
+    position: relative;
+    z-index: 4;
+    color: #6290e8;
+    font-size: 24rpx;
+    border-bottom: 1px dashed #6290e8;
+    width: 180rpx;
+    margin: 0px auto;
+    margin-top: 30rpx;
+    text-align: center;
+}
+
+.index_form{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 99;
+ flex-direction: column;
+}
+.masking{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.form_box{
+  background: #fff;
+  position: relative;
+  z-index: 100;
+  width: 650rpx;
+  border-radius:10rpx; 
+}
+.form_title{
+  text-align: center;
+  line-height: 90rpx;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 32rpx;
+}
+.form_item{
+  display: flex;
+ align-items: center;
+ border-radius:10rpx;
+height:96rpx;
+ border: 1px solid #f1f1f1;
+box-sizing: border-box;
+margin: 10rpx auto;
+width: 610rpx;
+}
+.form_item .iconfont{
+  margin:0px  20rpx;
+}
+.form_item input{
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.apply{
+  background: #ffcc21;
+  color: #fff;
+  
+}
+
+.exit{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  position: relative;
+  z-index: 99;
+  margin-top: 30rpx;
+}
+.bj2{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  filter:blur(20rpx);
+
+}

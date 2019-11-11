@@ -1,0 +1,26 @@
+/* pages/aqy/aqy.wxss */
+.cont{
+  height: 44px;
+  width: 100%;
+  border-bottom: 1rpx solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.price{
+  padding-left: 40px;
+  font-size: 28rpx;
+  height: 35px;
+  background: #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block
+}

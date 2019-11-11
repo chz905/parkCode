@@ -1,0 +1,201 @@
+/* pages/discover/discover.wxss */
+page{
+  background: #333333;
+}
+.dis_thead{
+	display: flex;
+	align-items: center;
+	height: 90rpx;
+	justify-content: space-between;
+	color: #cbcbcd;
+	padding: 0px 25rpx;
+	box-sizing: border-box;
+
+}
+.t_location{
+	line-height: 90rpx;
+	color: #cbcbcd;
+}
+.dis_title{
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 32rpx;
+}
+
+.dis_typelist{
+	margin: 60rpx 0px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 60rpx;
+	align-items: center;
+	color: #cbcbcd;
+}
+.dis_typelist .dis_titem{
+	text-align: center;
+}
+.dis_typelist .dis_titem .dt_important{
+	width: 84rpx;
+	height: 84rpx;
+	position: relative;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 84rpx;
+	border: 1px solid #cbcbcd;
+	font-size: 42rpx;
+	margin: 0px auto;
+	color: #cbcbcd;
+	margin-bottom:30rpx; 
+
+}
+.dis_typelist .dis_titem text{
+	color: #cbcbcd;
+	text-align: center;
+
+
+}
+.dis_typelist .dis_titem .dt_important .iconfont{
+	position: absolute;
+	top:-34rpx;
+	right:-10rpx;
+	color: #ecb109;
+	font-size: 40rpx;
+}
+
+
+.line_tow{
+	background: #454545;
+	width: 5rpx;
+	height: 50rpx;
+}
+
+.dis_twoleft{
+	text-align: left;
+	
+}
+
+.dis_twoleft .two_number{
+	color: #008220;
+	font-size: 40rpx;
+margin-top:10rpx;
+margin-bottom: 0rpx;
+}
+.dis_typelist .two_title{
+	color: #cbcbcd;
+}
+
+.dis_tworight{
+	text-align: right;
+}
+.dis_tworight .two_number{
+font-size: 40rpx;
+color: #cbcbcd;
+margin-top:10rpx;
+margin-bottom: 0rpx;
+
+}
+
+.dis_twoleft .iconfont ,.dis_tworight .iconfont{
+	font-size: 36rpx;
+}
+
+.car_list{
+	height:100rpx;
+	margin: 50rpx 0px;
+}
+.car_list swiper{
+	height: 70rpx;
+	text-align: center;
+	color: #cbcbcd;
+	line-height: 70rpx;
+}
+
+.sign_box{
+	width: 70rpx;
+	height: 70rpx;
+	border-radius: 50%;
+	background: #f2af03;
+	text-align: center;
+	line-height: 70rpx;
+	color: #fff;
+	font-size: 30rpx;
+}
+.dis_twoleft .sign_box{
+	margin-left: 20rpx;
+}
+
+.dis_tworight .sign_box{
+	margin-right: 20rpx; 
+	float: right;
+}
+
+.foot_title1{
+	font-size:28rpx;
+	color: #c5c7c6;
+	line-height: 50rpx;
+}
+.foot_title2{
+	font-size: 20rpx;
+	color: #7f7f7d;
+	line-height: 40rpx;
+}
+.clear{
+	clear: both;
+}
+
+
+.addcar_page{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background: #333333;
+  display: flex;
+  padding-bottom: 100rpx;
+  box-sizing: border-box;
+}
+.car_img{
+  position: absolute;
+  top: 400rpx;
+  width: 80%;
+  left: 10%;
+  opacity: 0.5;
+}
+.addcar_cont{
+  position: relative;
+  z-index: 100;
+  text-align: center;
+  color: #cacaca;
+}
+
+.add{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+  background: #f5ad03;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+  margin: 0px auto;
+
+}
+
+.add_title{
+  margin: 60rpx 0px;
+  font-size: 38rpx;
+}
+.add_item{
+  line-height:60rpx;
+  font-size: 32rpx;
+}
+
+.exit{
+ margin-top:20rpx; 
+}
+.exit .iconfont{
+ font-size: 80rpx;
+}

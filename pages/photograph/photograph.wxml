@@ -1,0 +1,12 @@
+<!--pages/photograph/photograph.wxml-->
+<!--pages/camera.wxml-->
+
+<camera class='pho' mode="normal" device-position="back" flash="auto" binderror="error" >
+  <cover-view class="noticeTXT">请确保行驶证正本边缘在拍摄框内</cover-view>
+</camera>
+
+
+<view class='pz' type="primary" bindtap="takePhoto">
+<i class="iconfont iconpaizhao"></i>
+</view>
+
